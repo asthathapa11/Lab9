@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dum Dum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="changingcolors">
+        <div id="p">
+            We are all saved by Grace through Faith. Be kind and compassionate to everyone because service to human is service to god.
+        </div>
+        <label for="text-color">Text Color</label>
+        <input type="text" id="text-color" name="text-color" placeholder="red, green, blue">
+        <label for="border-color">Border Color</label>
+        <input type="text" id="border-color" name="border-color" placeholder="red, green, blue"><br>
+        <label for="width-size">Width Size</label>
+        <input type="text" id="width-size" name="width-size" placeholder="1, 2, 3">
+    </div>
+    <script>
+        var textcolorvalue = document.getElementById("text-color");
+        var preview = document.getElementById("preview");
+        var p = document.getElementById("p");
+
+        textcolorvalue.addEventListener("input", function () {
+            var textColor = textcolorvalue.value;
+            p.style.color = textColor;
+            preview.style.color = textColor;
+        });
+
+        var borderColorInput = document.getElementById("border-color");
+        borderColorInput.addEventListener("input", function () {
+            var borderColor = borderColorInput.value;
+            p.style.borderColor = borderColor;
+        });
+
+        var widthSizeInput = document.getElementById("width-size");
+        widthSizeInput.addEventListener("input", function () {
+            var widthSize = widthSizeInput.value;
+            p.style.borderWidth = widthSize + "px";
+        });
+    </script>
+</body>
+
+</html>

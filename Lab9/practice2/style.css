@@ -1,0 +1,16 @@
+h1 {
+    color:rgb(242, 118, 189)
+}
+p{
+    color: rgb(0, 0, 0);
+}
+#changingcolors{
+    width: 80%;
+}
+#text-color{
+    display: inline-block;
+    margin-right: 10px;
+}
+#p{
+    border-style: solid;
+}
